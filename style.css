@@ -180,6 +180,95 @@ nav ul li a:hover {
     background-position: -250px center;
     background-size: cover;
 }
+/* Speed  */
+#speed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 2.5rem;
+    background-color: var(--pink-l);
+}
+.speed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.speed h2{
+    font-size: 2rem;
+}
+.speed h1{
+    font-size: 4rem;
+    margin: 2rem 0;
+}
+.speed p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+}
+.speed a{
+    margin-top: 2rem;
+}
+.speed a:hover{
+    background-color: var(--yellow);
+}
+/* Info */
+#info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+.info-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    margin: 2.5rem 0;
+}
+
+.info-box h1{
+    font-size: 2.5rem;
+}
+.info-box p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin: 2rem 0;
+}
+.info-box:last-child a{
+    background-color: var(--pink-l);
+}
+.info-box:last-child a:hover{
+    background-color: var(--yelow-l);
+}
+.info-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.info-img:hover img{
+    transform: scale(1.05);
+}
+.info-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+}
 @media screen and (max-width:1150px) {
     .hero-img {
         width: 441px;
@@ -189,6 +278,9 @@ nav ul li a:hover {
     .hero-desc > h1 {
         font-size: 4rem;
         margin: 1.5rem 0;
+    }
+    .info {
+        width: 800px;
     }
 }
 @media screen and (max-width:1000px) {
@@ -223,8 +315,13 @@ nav ul li a:hover {
 @media screen and (max-width:000px) {
     
 }
-@media screen and (max-width:000px) {
-    
+@media screen and (max-width:750px) {
+    .info-box {
+        width: 262px;
+    }
+    .info {
+        width: auto;
+    }
 }
 @media screen and (max-width:550px) {
     .hero-img {
@@ -241,6 +338,12 @@ nav ul li a:hover {
     }
     .hero-desc > h1 {
         font-size: 3rem;
+    }
+    .speed h1 {
+        font-size: 3rem;
+    }
+    .speed h2 {
+        font-weight: 500;
     }
 }
 @media screen and (max-width:000px) {
