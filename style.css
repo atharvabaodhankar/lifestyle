@@ -323,6 +323,71 @@ nav ul li a:hover {
     line-height: 2.5rem;
     margin: 2rem 0;
 }
+/* Clients */
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12rem 0;
+    background-color:var(--yelow-l);
+}
+.client-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    padding: 0 2.5rem;
+    width: 550px;
+    height: 400px;
+    margin: 0 1rem;
+}
+.client-box-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.check-img{
+    background-color: var(--pink-l);
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 1.5rem;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50% ,-50%);
+}
+.client-box-desc h1{
+    font-size: 2rem;
+}
+.client-box-desc p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+    width: 80%;
+}
+.client-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50% , -50%);
+    background-image: url(client1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.client-box:last-child .client-img{
+    background-image: url(client2.jpg);
+    background-position: 0px center;
+}
 @media screen and (max-width:1150px) {
     .hero-img {
         width: 441px;
@@ -342,6 +407,10 @@ nav ul li a:hover {
     .employee-footer {
         width: 620px;
     }
+    .client-box {
+        width: 440px;
+        height: 400px;
+    }
 }
 @media screen and (max-width:1000px) {
     .hero-img {
@@ -352,8 +421,16 @@ nav ul li a:hover {
         width: 410px;
     }
 }
-@media screen and (max-width:000px) {
-    
+@media screen and (max-width:950px) {
+    #clients{
+        flex-wrap: wrap;
+    }
+    .client-box {
+        width: 80%;
+    }
+    .client-box:last-child{
+        margin-top: 20rem;
+    }
 }
 @media screen and (max-width:850px) {
     #hero{
@@ -446,6 +523,17 @@ nav ul li a:hover {
     }
     .employee-footer h1 {
         font-size: 2.2rem;
+    }
+    .client-box {
+        width: 90%;
+        height: 500px;
+    }
+    .client-box-desc p {
+        width: 90%;
+    }
+    .client-img {
+        width: 135px;
+        height: 135px;
     }
 }
 @media screen and (max-width:350px) {
