@@ -388,6 +388,84 @@ nav ul li a:hover {
     background-image: url(client2.jpg);
     background-position: 0px center;
 }
+/* Team */
+#team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+.team-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+.team-header h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.team-header h1 span{
+    color: var(--yelow-l);
+}
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+.team-box:nth-child(2) .team-box-img{
+    background-image: url(t2.jpg);
+}
+.team-box:nth-child(3) .team-box-img{
+    background-image: url(t3.jpg);
+}
+.team-box:nth-child(4) .team-box-img{
+    background-image: url(t4.jpg);
+}
+.team-box:nth-child(5) .team-box-img{
+    background-image: url(hero.jpg);
+}
+.team-box:nth-child(6) .team-box-img{
+    background-image: url(t6.jpg);
+    background-position: -150px center;
+}
+.team-box:nth-child(7) .team-box-img{
+    background-image: url(client2.jpg);
+    background-position: left center;
+
+}
+.team-box:nth-child(8) .team-box-img{
+    background-image: url(t5.jpg);
+    background-position: left center;
+
+}
+
+.team-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 3rem 2rem;
+}
+.team-box-img{
+    background-image: url(t1.jpg);
+    background-position: -65px center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.team-box h1{
+    font-size: 2.3rem;
+    color: #383838;
+    margin-top: 1.5rem;
+}
 @media screen and (max-width:1150px) {
     .hero-img {
         width: 441px;
@@ -419,6 +497,9 @@ nav ul li a:hover {
     }
     .hero-desc {
         width: 410px;
+    }
+    .team {
+        width: 730px;
     }
 }
 @media screen and (max-width:950px) {
@@ -471,7 +552,9 @@ nav ul li a:hover {
     .employee-footer h1 {
         font-size: 3rem;
     }
-    
+    .team {
+        width: 501px;
+    }
 }
 @media screen and (max-width:550px) {
     .hero-img {
@@ -494,6 +577,13 @@ nav ul li a:hover {
     }
     .speed h2 {
         font-weight: 500;
+    }
+    .team {
+        width: auto;
+    }
+    .team-box {
+        width: 100%;
+        margin: 3rem 0rem;
     }
 }
 @media screen and (max-width:000px) {
