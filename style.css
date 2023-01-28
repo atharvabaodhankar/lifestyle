@@ -60,7 +60,7 @@ nav ul{
     width: 400px;
     height: 100vh;
     background-color: rgba(6, 6, 6, 0.847);
-    transition: all .3s ease;
+    transition: all .7s ease;
 }
 nav.active ul{
     left: 0;
@@ -466,6 +466,63 @@ nav ul li a:hover {
     color: #383838;
     margin-top: 1.5rem;
 }
+/* Options */
+#options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+    background-color: var(--pink-l);
+}
+.options-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2.5rem;
+}
+.options-header h1{
+    font-size: 3.5rem;
+    margin: 4rem 0;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.options-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 1.5rem;
+    width: 400px;
+}
+.options-box img{
+    width: 70px;
+    height: 70px;
+}
+.options-box h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.options-box p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+#options .btn{
+    padding: 2rem 5rem;
+    margin-top: 4rem;
+}
+#options .btn:hover{
+    background-color: #fff;
+    color: var(--pink);
+}
 @media screen and (max-width:1150px) {
     .hero-img {
         width: 441px;
@@ -526,6 +583,9 @@ nav ul li a:hover {
         height: 576px;
         background-position: -270px center;
     }
+    .options-box {
+        width: 80%;
+    }
 }
 @media screen and (max-width:000px) {
     
@@ -554,6 +614,9 @@ nav ul li a:hover {
     }
     .team {
         width: 501px;
+    }
+    .options-header h1 {
+        font-size: 2.9rem;
     }
 }
 @media screen and (max-width:550px) {
