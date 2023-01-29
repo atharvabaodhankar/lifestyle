@@ -523,6 +523,68 @@ nav ul li a:hover {
     background-color: #fff;
     color: var(--pink);
 }
+/* Price */
+#price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--yelow-l);
+    padding: 7rem 0;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 4rem 2rem;
+    width: 530px;
+    margin: .5rem 1.5rem;
+}
+.price-box-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.price-box-header h1{
+    font-size: 3.5rem;
+}
+.price-box > p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+.price-box ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+.price-box ul p{
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+.price-box ul li{
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+.price-box .btn{
+    background-color: var(--pink-l);
+    margin-top: 3rem;
+    text-align: center;
+}
+.price-box .btn:hover{
+    background-color: var(--pink);
+}
 @media screen and (max-width:1150px) {
     .hero-img {
         width: 441px;
@@ -545,6 +607,13 @@ nav ul li a:hover {
     .client-box {
         width: 440px;
         height: 400px;
+    }
+    .price{
+        flex-wrap: wrap;
+    }
+    .price-box {
+        width: 415px;
+        margin: 2rem 1.5rem;
     }
 }
 @media screen and (max-width:1000px) {
@@ -585,6 +654,12 @@ nav ul li a:hover {
     }
     .options-box {
         width: 80%;
+    }
+    .price {
+        width: 100%;
+    }
+    .price-box {
+       width: 80%;
     }
 }
 @media screen and (max-width:000px) {
@@ -647,6 +722,12 @@ nav ul li a:hover {
     .team-box {
         width: 100%;
         margin: 3rem 0rem;
+    }
+    .price-box {
+        width: 90%;
+    }
+     .price-box-header h1 {
+        font-size: 3rem;
     }
 }
 @media screen and (max-width:000px) {
