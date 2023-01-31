@@ -665,6 +665,68 @@ nav ul li a:hover {
     height: 250px ;
     margin: 0 10rem;
 }
+/* Contact */
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+    background-color: var(--pink-l);
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    width: 900px;
+    margin-top: 10rem;
+    padding: 3rem 0;
+}
+.contact-img{
+    background-image: url(info3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transform: translateY(-100px);
+}
+.contact .btn{
+    margin: -6rem 0 2rem 0;
+    padding: 2.3rem 4rem;
+}
+.contact-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 0;
+}
+.contact-desc h1{
+    font-size: 3.5rem;
+}
+.contact-desc p{
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+}
+.contact-desc ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+}
+.contact-desc ul li{
+    font-size: 2.4rem;
+    margin: 1rem 0;
+}
+.contact-desc ul li b{
+    margin-right: 1rem;
+}
 @media screen and (max-width:1470px) {
     .features-top {
         width: 1086px;
@@ -734,6 +796,10 @@ nav ul li a:hover {
     .client-box:last-child{
         margin-top: 20rem;
     }
+    .contact {
+        width: 90%;
+        padding: 2.5rem 2rem;
+    }
 }
 @media screen and (max-width:850px) {
     #hero{
@@ -801,6 +867,14 @@ nav ul li a:hover {
         margin: 2.5rem 0;
     }
 }
+@media screen and (max-width:650px) {
+    .contact-desc ul li {
+        font-size: 2rem;
+    }
+    .contact-desc h1 {
+        font-size: 3rem;
+    }
+}
 @media screen and (max-width:550px) {
     .hero-img {
         width: 300px;
@@ -837,9 +911,7 @@ nav ul li a:hover {
         font-size: 3rem;
     }
 }
-@media screen and (max-width:000px) {
-    
-}
+
 @media screen and (max-width:000px) {
     
 }
@@ -897,5 +969,11 @@ nav ul li a:hover {
         margin-top: 5rem;
         height: 292px;
         background-position: -164px center;
+    }
+    .contact-desc ul li {
+        font-size: 1.6rem;
+    }
+    .contact-desc h1 {
+        font-size: 2.4rem;
     }
 }
