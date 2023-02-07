@@ -1298,6 +1298,54 @@ nav ul li a:hover {
 .emico-box-desc a:hover{
     background-color: var(--pink-l);
 }
+/* Quality */
+#quality{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+.quality-left{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: var(--pink-l);
+}
+.quality-right{
+    width: 50%;
+    height: 100%;
+    background-image: url(employee.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.quality-main{
+    width: 600px;
+    padding: 0 2.5rem;
+}
+.quality-main h2{
+    font-size: 2rem;
+}
+.quality-main h1{
+    font-size: 4rem;
+    margin: 1.5rem 0 5rem 0;
+}
+.quality-main a{
+    background-color: var(--pink);
+    color: #fff;
+    border: 2px solid var(--pink);
+    font-size: 2rem;
+    padding: 1rem 1.4rem;
+}
+.quality-main a:hover{
+    background-color: transparent;
+}
+/* Footer */
+#footer{
+    height: 100vh;
+}
 @media screen and (max-width:1470px) {
     .features-top {
         width: 1086px;
@@ -1311,6 +1359,9 @@ nav ul li a:hover {
 @media screen and (max-width:1300px) {
     .ourteam {
         width: 415px;
+    }
+    .quality-main {
+        width: 90%;
     }
 }
 @media screen and (max-width:1150px) {
@@ -1420,6 +1471,9 @@ nav ul li a:hover {
     .ourteam{
         margin-right: 0;
      }
+     .quality-main h1 {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width:850px) {
@@ -1448,6 +1502,23 @@ nav ul li a:hover {
 
     .price-box {
         width: 80%;
+    }
+    #quality{
+        flex-direction: column;
+        height: auto;
+    }
+    .quality-main {
+        width: 100%;
+    }
+    .quality-left{
+        height: auto;
+        padding: 10rem 0;
+        width: 100%;
+    }
+    .quality-right{
+        height: 400px;
+        width: 100%;
+        background-position: center top;
     }
 }
 
