@@ -1239,6 +1239,65 @@ nav ul li a:hover {
     color: #383838;
     margin-top: 1rem;
 }
+/* Emloyees-ico */
+#employees-ico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+}
+.employees-ico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.emico-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--pink-l);
+    border-radius: 1rem;
+    padding: 3rem 1rem;
+    width: 40%;
+    margin: 2rem 2rem;
+}
+.emico-box img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 4rem;
+}
+.emico-box-desc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+.emico-box-desc h1{
+    font-size: 2rem;
+    color: #383838;
+}
+.emico-box-desc p{
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+}
+.emico-box-desc a{
+    font-size: 1.6rem;
+    background-color: var(--pink);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    margin-top: 3rem;
+    border: 2px solid var(--pink);
+    font-weight: 600;
+}
+.emico-box-desc a:hover{
+    background-color: var(--pink-l);
+}
 @media screen and (max-width:1470px) {
     .features-top {
         width: 1086px;
@@ -1300,6 +1359,9 @@ nav ul li a:hover {
     .features-bottom {
         width: auto;
         flex-wrap: wrap;
+    }
+    .emico-box{
+        width: 80%;
     }
 }
 
@@ -1513,7 +1575,19 @@ nav ul li a:hover {
     .price-box-header h1 {
         font-size: 3rem;
     }
-
+    .emico-box{
+        width: 90%;
+        flex-direction: column;
+    }
+    .emico-box img{
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .emico-box-desc{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:000px) {}
